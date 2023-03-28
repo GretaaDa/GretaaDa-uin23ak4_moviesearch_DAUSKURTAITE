@@ -1,22 +1,13 @@
+import { Outlet } from "react-router-dom";
+
 export default function Layout() {
     return (
         <div id="layout">
             <header>
                 <h1>Movie search</h1>
-                <form>
-                    <input placeholder="Search title here.." />
-                    <button>Search</button>
-                </form>
             </header>
             <main>
-                <article>
-                    <img src="#" />
-                    <h2>Movie title</h2>
-                    <p>Producer, date and genre</p>
-                    <p>Star actors</p>
-                    <p>Price</p>
-                    <button>More about the movie</button>
-                </article>
+                <Outlet />
             </main>
             <footer>
                 <h3>API used:</h3>
