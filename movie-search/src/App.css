@@ -1,38 +1,73 @@
-.App {
+.pageTitle {
   text-align: center;
+  color: #fff;
+  background-color: #4a4e69;
+  margin: 0;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  padding: 1rem 5rem;
+  gap: 5px;
+}
+
+input {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.searchBtn {
+  width: 20%;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: #c2caff;
+  border-color: rgb(142, 142, 142);
+  border-style: solid;
+  border-width: 1px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.movieCard {
+  width: 100%;
+  max-width: 300px;
+  padding: 1rem 2rem;
+  background-color: lightgray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movieCard img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  height: 400px;
+}
+
+.trophy,
+.star {
+  width: 15px;
+  color: yellow;
+  border: black;
+}
+
+footer {
+  text-align: center;
+  background-color: #98a1e2;
+  padding: 0.5rem 0rem;
+  margin-top: 1rem;
+}
+
+footer h3,
+p {
+  font-weight: 500;
+  margin: 0.5;
 }
