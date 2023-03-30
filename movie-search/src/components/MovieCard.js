@@ -27,7 +27,6 @@ export default function MovieCard({ title, img, year, id }) {
             <p>Genres: {details.Genre}</p>
             <p><StarIcon className='star' /> Actors: {details.Actors}</p>
             <p><TrophyIcon className='trophy' /> {details.Awards}</p>
-            <button>More about the movie</button>
         </article>
     )
 }

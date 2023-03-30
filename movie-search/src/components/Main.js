@@ -28,7 +28,7 @@ export default function Main() {
             <SearchResults getMovies={getMovies} setSearch={setSearch} />
             <div className="cardContainer">
                 {movies.map((movie, index) =>
-                    (<MovieCard key={index} title={movie?.Title} img={movie?.Poster} year={movie?.Year} id={movie?.imdbID} movies={movies} />))}
+                    (<MovieCard key={index} title={movie?.Title} img={movie?.Poster} year={movie?.Year} id={movie?.imdbID} />))}
             </div>
         </>
     )
